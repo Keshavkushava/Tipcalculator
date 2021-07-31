@@ -1,0 +1,83 @@
+body {                                       /*To style the body part*/
+  font-size: 1.2em;
+  width: 100%;
+  margin: 1 auto;
+  letter-spacing: 0.5px;
+}
+
+
+h1 {                                        /*To style the main heading*/
+  text-align: center;
+}
+
+
+
+#container {                                /*To style the main Div*/ 
+  padding: 1.5em;
+  background: linear-gradient(-45deg, rgb(236, 220, 215), rgb(160, 150, 147));
+  border-radius: 10px;
+  opacity: 0.89;
+}
+
+
+
+
+div {                                       /*To style the each div box*/
+  line-height: 2.5em;
+  text-align: center;
+}
+
+
+
+input[type="number"] {                     /*To style input field*/
+  font-size: 0.9em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+input, label{
+  width: 100%;
+}
+
+
+
+#calculate-button, #reset-button {                       /*To style the calculate and reset button*/
+  margin: 0 15px 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: #0e0a00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+
+@media (min-width:700px) {                                      /*To style the elements only when the browser window is 700px wide or more*/      
+  body {
+    width: 54%;
+    background-color: white;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+  }
+
+
+
+  label, input {
+    display: inline-block;
+    width: 40%;
+  }
+
+
+
+  div {
+   line-height: 4em;
+  }
+}
+ 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title> 
+  <link rel="stylesheet" href="style.css">  <!--Link to external CSS-->
+</head>
+<body> 
+ <div id="container">
+  <h1>Tip Calculator</h1> <!--Main heading-->
+  <hr> <!--First horizontal line-->
+
+<form>
+ <div>  <!--Total bill box-->
+  <label>Total Bill:</label>
+  <input type="number" placeholder="Enter your bill amount" min="0" id="totalBill" required="true">  <!--Total bill input field-->
+ </div>
+
+ <div>  <!--Tip box-->
+  <label>Tip %:</label>
+  <input type="number" placeholder="Enter tip percentage" min="0"  id="tipInput" required="true">   <!--Tip percentage input field-->
+ </div>
+
+ <div> <!--Split bill box-->
+  <label>Number of People:</label>
+  <input type="number" min="1" value="1" id="tipSplit" required="true">  <!--Number of people input field-->
+ </div>
+
+ <div> <!--calculate and reset button box-->
+  <button type="reset" id="reset-button"  value="reset" onclick="clearform()">Reset</button>  <!--Reset button-->
+  <button type="button" id="calculate-button" onclick="buttonclick()" value="button">Calculate</button>  <!--calculate button-->
+ </div> 
+
+  <hr> <!--second horizontal line-->
+
+ <div> 
+  <label>Total Amount (per person) : </label><span id="newBill">$0.00</span>  <!--output field of amonut per person-->
+ </div>
+
+
+ <div>
+  <label>Tip Amount (per person) : </label><span id="tipAmount">$0.00</span>  <!--output field of tip per person-->
+ </div>
+
+</form>
+
+ </div> 
+
+<script src="script.js"></script> <!--link to external javascript-->
+</body>
+</html>
